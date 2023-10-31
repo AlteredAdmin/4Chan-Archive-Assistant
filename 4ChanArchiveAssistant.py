@@ -29,7 +29,7 @@ def download_from_thread(thread_url):
         print("Thread not found!")
         return
 
-    title = thread.topic.subject if thread.topic.subject else ' '.join(thread.topic.text.split()[:5])
+    title = thread.topic.subject if thread.topic.subject else ' '.join(thread.topic.text.split()[:5]) if hasattr(thread.topic, "text") else thread_id
     folder_name = title.replace('/', '_').replace('\\', '_').replace(':', '_').replace('*', '_').replace('?', '_').replace('"', '_').replace('<', '_').replace('>', '_').replace('|', '_')
     full_save_path = os.path.join(SAVE_DIRECTORY, folder_name)
 
