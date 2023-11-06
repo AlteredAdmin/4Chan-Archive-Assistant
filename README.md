@@ -35,3 +35,7 @@ pip install requests basc_py4chan
 - After providing the URL, the user is asked if they wish to process previously logged URLs.
 - The script then downloads the content from the provided URL and logs it if it hasn't been logged before.
 - If the user opts to process from the log, the script fetches and processes each logged URL sequentially.
+
+## Support the Developer
+If you found this helpful, please consider:
+- **Buymeacoffee:** [Link](http://buymeacoffee.com/alteredadmin)
